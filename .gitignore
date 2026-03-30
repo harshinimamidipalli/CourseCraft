@@ -8,3 +8,6 @@ dist/
 build/
 .DS_Store
 >>>>>>> 02d87cddb7ada18243966cb2790488a15d2a2081
+backend/src/config/firebaseServiceAccount.json
+.env 
+docs/
