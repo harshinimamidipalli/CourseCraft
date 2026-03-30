@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* GLOBAL STYLES */
+body {
+  background-color: #FFFDD0;
+  color: #0B3954;
+  scroll-behavior: smooth;
+  font-family: 'Georgia', serif;
+}
+
+/* CUSTOM UTILITIES */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* luxury grain */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("https://grainy-gradients.vercel.app/noise.svg");
+  opacity: 0.05;
+  pointer-events: none;
+}
