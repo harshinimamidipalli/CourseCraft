@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 
 const courses = [
   { name: "Mathematics", progress: 80 },
+  { name: "Statistics", progress: 10 },
+  { name: "Economics", progress: 90 },
   { name: "Physics", progress: 60 },
   { name: "Chemistry", progress: 40 },
   { name: "Biology", progress: 75 },
@@ -73,22 +75,16 @@ const Dashboard = () => {
       </div>
 
       {/* MAIN GRID */}
-      <div className="main-grid">
-
-        {/* LEFT PANEL */}
-        <div className="panel glass">
-          <h3>Your Progress</h3>
-          <div className="panel-item">Courses Completed: 5</div>
-          <div className="panel-item">In Progress: 3</div>
-
-          <div className="ai-card">
-            <h4>AI Suggestion</h4>
-            <p>Focus on Physics today</p>
-          </div>
-        </div>
-
+      <div className="main-grid" style={{ display: "grid", gridTemplateColumns: "3fr 1fr", gap: "30px" }}>
         {/* CENTER GRID */}
-        <div className="course-grid">
+       <div
+        className="course-grid"
+        style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(4, 1fr)",
+            gap: "20px"
+        }}
+        >
           {courses.map((course, index) => (
             <div
               key={index}
@@ -112,12 +108,6 @@ const Dashboard = () => {
         {/* RIGHT PANEL */}
         <div className="panel glass insights-panel">
           <h3>Insights</h3>
-
-          <div className="insight-card primary">
-            <h4>AI Recommendation</h4>
-            <p>Revise Physics today</p>
-          </div>
-
           <div className="insight-card">
             <p>📅 Next test in 2 days</p>
           </div>

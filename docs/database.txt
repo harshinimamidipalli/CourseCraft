@@ -1,0 +1,4 @@
+database name: CourseCraft
+database password: RaHaBicmrit123
+database ID(Reference used in APIs and URLs.): pkkmrcnqenmwajfjwsvm
+

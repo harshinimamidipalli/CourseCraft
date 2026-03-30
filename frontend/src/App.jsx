@@ -1,6 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+// Onboarding
+import WelcomePage from "./pages/Home/WelcomePage";
+// import Signup from "./pages/Auth/Signup";
+// import Signin from "./pages/Auth/Signin";
+
+// Main App
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Profile from "./pages/Profile/Profile";
 import EditProfile from "./pages/EditProfile/EditProfile";
@@ -12,7 +18,13 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Dashboard />} />
+        {/* Landing Flow */}
+        <Route path="/" element={<WelcomePage />} />
+        {/* <Route path="/signup" element={<Signup />} />
+        <Route path="/signin" element={<Signin />} /> */}
+
+        {/* App Pages */}
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/edit-profile" element={<EditProfile />} />
         <Route path="/recommendations" element={<Recommendations />} />

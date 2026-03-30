@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useNavigate } from "react-router-dom";
 
 const WelcomePage = () => {
+  const navigate = useNavigate();
   // Stages: tracing -> highlight -> main
-  const [stage, setStage] = useState('tracing'); 
+  const [stage, setStage] = useState('main'); 
 
   useEffect(() => {
     // 1. Trace brain (2.5s) -> 2. Highlight Play (1s) -> 3. Enter Site
@@ -140,6 +142,12 @@ const WelcomePage = () => {
               <button className="px-8 py-2.5 bg-[#0B3954] text-white rounded-full text-xs font-bold tracking-[0.2em] hover:scale-105 active:scale-95 transition-all shadow-md">
                 SIGN UP
               </button>
+              <button
+              onClick={() => navigate("/dashboard")}
+              className="px-8 py-2.5 bg-[#0B3954] text-white rounded-full text-xs font-bold tracking-[0.2em] hover:scale-105 active:scale-95 transition-all shadow-md"
+            >
+              DASHBOARD
+            </button>
             </div>
           </header>
 

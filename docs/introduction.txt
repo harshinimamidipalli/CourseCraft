@@ -1,0 +1,39 @@
+Hi! This is the overview of what I am planning to do in my project.
+Application features -
+
+1. Recommend the best video for me based on the language of audio I want(english or hindi), the number of views in how long time, the comments and the authenticity of the channel and content.
+
+2. The given video will be transcribed and summarised as notes.
+
+3. AI will generate quiz on the topic
+
+4. There will be a scheduler that will remind you when to revise the topic again to make sure you don't forget it
+
+5. AI will also let us know if there are any new updates done in that field of study
+
+1) Course Curator 
+We tell one concept -> AI will search Youtube based on audio language preference, number of views in how long, content's and channel's authenticity and comments -> will suggest one video only that it thinks is the best for that concept and will also give its confidence score, why it thinks its the best video, channel's age and authenticity/stats, video's response on Youtube. 
+Current Scope - it is scoped only to specific concepts(like pointers) and not complete topics(like C), will give exactly ONE video 
+
+2) Quiz Generator 
+User watches the video -> AI will show quiz pop-up -> User clicks it -> There will be around 5 questions with varying difficulty based on the concept taught in the video -> User selects an option -> AI will let the user know if it is right or wrong and also tell the user why that is the answer to that question -> after the quiz, AI will the tell the user in what parts they are strong and what parts they should work on wrt the concept taught Current Scope - Show ~5 questions as quiz at the end with varying difficulty and explanation to the answer Future Scope - Have in video 1 question quizzes as pop-ups along with full one at the end, also gather some frequently aksed questions from that topic in interviews/exams etc. 
+
+3) Summarizer / Notes Generator 
+User will be watching video -> parallely notes will be being made -> there will be a slider that the user can click on - then left side video and right side notes generation live, they can close the slider for full video view -> After video and quiz is over, user can see the notes -> notes will be segregated into definitions, concepts, and will have summary at the end 
+Future Scope - Add diagrams used in the video into the notes as well as code snippets 
+
+4) Revision Scheduler 
+Based on the user's learning pattern and the usual brain learning pattern, the app will remind the user to revisit the concept by taking a quiz followed by revising the notes so they don't forget it 
+
+5) Acknowledger 
+Once the user curates a course for a concept, the app will let them know if there are any updates made in that field with a brief description of the update. The app should ideally let them know in less than 2 days about the update 
+Future Scope - the app will also give the best video to watch that will provide them the latest information. 
+
+6) Payment 
+The app will have a premium subscription where the free version will have only course curator and the paid version will have all the other features as well(We are integrating payment just to show that it exists, it need not necessarily add so much value to the user) 
+7) Learning dashboard 
+The app will have great UI(like HotStar) and will have all the courses, notes and everything about the user profile.
+
+Project repo link: https://github.com/harshinimamidipalli/CourseCraft
+Database URL: jdbc:postgresql://db.pkkmrcnqenmmajfjwsvm.supabase.co:5432/postgres
+ 

@@ -1,0 +1,16 @@
+EVERYDAY GITHUB STEPS
+
+Steps we must follow before starting to work on our project everyday:
+cd CourseCraft
+git checkout main
+git pull origin main
+git checkout your-branch-name
+git merge main
+
+Steps to follow before stopping to work on our project everyday:
+git checkout your-branch-name
+git add .
+git commit -m "your changes message"
+git push origin your-branch-name
+
+Here branch name is basically: we will be working on a part no so we create branches and work on them. In the commands above - cd checkout -b welcome-page is the command to create a branch. So the branch name is welcome-page
