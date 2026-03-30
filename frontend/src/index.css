@@ -1,14 +1,14 @@
-<<<<<<< HEAD
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* GLOBAL STYLES */
 body {
+  margin: 0;
   background-color: #FFFDD0;
   color: #0B3954;
   scroll-behavior: smooth;
-  font-family: 'Georgia', serif;
+  font-family: 'Poppins', 'Georgia', serif;
 }
 
 /* CUSTOM UTILITIES */
@@ -24,10 +24,4 @@ body::after {
   background: url("https://grainy-gradients.vercel.app/noise.svg");
   opacity: 0.05;
   pointer-events: none;
-=======
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #ffffff;
->>>>>>> 02d87cddb7ada18243966cb2790488a15d2a2081
 }
