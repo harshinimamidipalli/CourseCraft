@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -23,4 +24,10 @@ body::after {
   background: url("https://grainy-gradients.vercel.app/noise.svg");
   opacity: 0.05;
   pointer-events: none;
+=======
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+>>>>>>> 02d87cddb7ada18243966cb2790488a15d2a2081
 }

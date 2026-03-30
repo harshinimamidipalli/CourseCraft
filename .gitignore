@@ -1,3 +1,10 @@
 node_modules/
+<<<<<<< HEAD
 .DS_Store
 .env
+=======
+.env
+dist/
+build/
+.DS_Store
+>>>>>>> 02d87cddb7ada18243966cb2790488a15d2a2081

@@ -1,0 +1,122 @@
+/* WRAPPER */
+.edit-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  background: linear-gradient(to bottom, #ffffff, #f7f9fb);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* MAIN CONTAINER */
+.edit-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 60px;
+  padding: 0 60px;
+}
+
+/* LEFT SIDE */
+.edit-left {
+  max-width: 300px;
+}
+
+.edit-left h1 {
+  color: #0B3954;
+  font-size: 32px;
+}
+
+.edit-left p {
+  color: #666;
+  margin-top: 8px;
+}
+
+.back-btn {
+  margin-top: 20px;
+  background: none;
+  border: none;
+  color: #0B3954;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* CARD */
+.edit-card {
+  width: 400px;
+  padding: 30px;
+
+  background: linear-gradient(145deg, #ffffff, #f5f7fa);
+  border-radius: 18px;
+  border: 1px solid #eee;
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+
+  text-align: center;
+}
+
+/* AVATAR */
+.avatar.large {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+  background: #0B3954;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 28px;
+  margin: auto;
+}
+
+/* FORM */
+.form-group {
+  margin-top: 18px;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 13px;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+
+  border-radius: 10px;
+  border: 1px solid #ddd;
+
+  font-size: 14px;
+}
+
+/* ACTIONS */
+.actions {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* BUTTONS */
+.save-btn {
+  background: #0B3954;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: #eee;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}

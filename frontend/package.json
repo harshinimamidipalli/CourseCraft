@@ -1,10 +1,15 @@
 {
+<<<<<<< HEAD
   "name": "coursecraft-frontend",
+=======
+  "name": "frontend",
+>>>>>>> 02d87cddb7ada18243966cb2790488a15d2a2081
   "version": "1.0.0",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-scripts": "5.0.1",
     "framer-motion": "^11.0.0",
     "react-intersection-observer": "^9.5.0"
@@ -19,6 +24,14 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+=======
+    "react-router-dom": "^7.13.2",
+    "react-scripts": "5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+>>>>>>> 02d87cddb7ada18243966cb2790488a15d2a2081
   },
   "browserslist": {
     "production": [
