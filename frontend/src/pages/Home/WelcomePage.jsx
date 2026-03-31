@@ -138,8 +138,8 @@ const WelcomePage = () => {
               </div>
             </div>
             <div className="flex items-center space-x-8">
-              <button className="text-xs font-bold tracking-[0.2em] text-[#0B3954] hover:opacity-50 transition-all uppercase">LOG IN</button>
-              <button className="px-8 py-2.5 bg-[#0B3954] text-white rounded-full text-xs font-bold tracking-[0.2em] hover:scale-105 active:scale-95 transition-all shadow-md">
+              <button  onClick={() => navigate("/signin")} className="text-xs font-bold tracking-[0.2em] text-[#0B3954] hover:opacity-50 transition-all uppercase">LOG IN</button>
+              <button onClick={() => navigate("/signup")} className="px-8 py-2.5 bg-[#0B3954] text-white rounded-full text-xs font-bold tracking-[0.2em] hover:scale-105 active:scale-95 transition-all shadow-md">
                 SIGN UP
               </button>
               <button

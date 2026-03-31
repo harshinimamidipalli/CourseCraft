@@ -3,6 +3,7 @@ import "./Dashboard.css";
 import logo from "../../assets/final.png";
 import { useNavigate } from "react-router-dom";
 
+
 const courses = [
   { name: "Mathematics", progress: 80 },
   { name: "Statistics", progress: 10 },
@@ -124,8 +125,17 @@ const Dashboard = () => {
       <h3>Logout</h3>
       <p>Are you sure you want to logout?</p>
 
-      <div className="modal-actions">
+     <div className="main-grid">
+  ...
+</div>
 
+{showLogoutModal && (
+  <div className="modal-overlay">
+    <div className="modal">
+      <h3>Logout</h3>
+      <p>Are you sure you want to logout?</p>
+
+      <div className="modal-actions">
         <button
           className="cancel-btn"
           onClick={() => setShowLogoutModal(false)}
@@ -133,15 +143,25 @@ const Dashboard = () => {
           No
         </button>
 
-        <button className="confirm-btn">
-          Yes
-        </button>
+        <button
+  style={{ zIndex: 999999, position: "relative" }}
+  onClick={() => {
+    console.log("CLICKED");
+    alert("CLICKED");
+  }}
+>
+  Test
+</button>
+      </div>
+    </div>
+  </div>
+)}
 
       </div>
 
     </div>
 
-  </div>
+ 
 )}
       </div>
     </div>

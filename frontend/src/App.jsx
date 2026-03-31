@@ -13,6 +13,8 @@ import EditProfile from "./pages/EditProfile/EditProfile";
 import Recommendations from "./pages/Recommendations/Recommendations";
 import MyPlan from "./pages/MyPlan/MyPlan";
 import Settings from "./pages/Settings/Settings";
+import SignUp from "./pages/Auth/SignUp";
+import SignIn from "./pages/Auth/SignIn";
 
 function App() {
   return (
@@ -20,8 +22,8 @@ function App() {
       <Routes>
         {/* Landing Flow */}
         <Route path="/" element={<WelcomePage />} />
-        {/* <Route path="/signup" element={<Signup />} />
-        <Route path="/signin" element={<Signin />} /> */}
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/signin" element={<SignIn />} />
 
         {/* App Pages */}
         <Route path="/dashboard" element={<Dashboard />} />
@@ -30,6 +32,7 @@ function App() {
         <Route path="/recommendations" element={<Recommendations />} />
         <Route path="/plan" element={<MyPlan />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/welcome" element={<WelcomePage />} />
       </Routes>
     </Router>
   );
